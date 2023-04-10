@@ -14,9 +14,9 @@ public class Collide : MonoBehaviour
 
 
 
-    private void OnCollisionEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("çarpýþma oldu");
+        Debug.Log("ï¿½arpï¿½ï¿½ma oldu");
         if (other.gameObject.CompareTag("enemy"))
         {
             live--;
