@@ -30,11 +30,6 @@ public class KeyCount : MonoBehaviour
                 Destroy(other.gameObject);
                 Destroy(kapi2);
             }
-           
-            
-           
-            
-            
             
         }
 

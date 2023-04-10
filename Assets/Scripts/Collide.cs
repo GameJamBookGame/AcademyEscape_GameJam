@@ -17,7 +17,7 @@ public class Collide : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("�arp��ma oldu");
-        if (other.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag("enemy") && live > 0)
         {
             live--;
             _liveUI[live].gameObject.SetActive(false);

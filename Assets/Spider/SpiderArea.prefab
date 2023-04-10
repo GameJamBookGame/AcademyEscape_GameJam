@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3059646226399142081}
   m_Layer: 0
   m_Name: SpiderArea
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,6 +39,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3059646226399142081}
     m_Modifications:
+    - target: {fileID: 100138, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
       propertyPath: m_Name
       value: spider_myOldOne
@@ -610,7 +614,7 @@ PrefabInstance:
     - target: {fileID: 13700000, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7cf2e21f08ba96340b61fc60381ad6af, type: 2}
+      objectReference: {fileID: 2100000, guid: 1035394dba39c5b41a002d49c4b0cb88, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
 --- !u!111 &3059646226620644201 stripped
@@ -623,6 +627,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
   m_PrefabInstance: {fileID: 3059646226631697417}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3059646226631664419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100138, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
+  m_PrefabInstance: {fileID: 3059646226631697417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &959008244
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059646226631664419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33952904
+  m_Center: {x: -0.08953164, y: 0.34821567, z: 0.3682196}
 --- !u!1 &3059646226631664421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
@@ -744,7 +766,7 @@ MonoBehaviour:
   viewHorizontalDistance: 2
   viewVerticalDistance: 0.5
   walkSpeed: 0.4
-  runSpeed: 5
+  runSpeed: 3
   walkRange: 2
   spiderArea: {fileID: 3059646226399142080}
 --- !u!195 &3059646226033269730
